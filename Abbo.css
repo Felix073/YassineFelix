@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*
+
+{
+
+margin: 0;
+
+padding: 0;
+
+}
+
+.sky{
+
+height: 100vh;
+
+width: 100%;
+
+background-image: url(img/sky.jpg);
+
+background-size: cover;
+
+background-position: center;
+
+position: relative;
+
+overflow-x: hidden;
+
+}
+
+/* prijzenboxen (midden centreren, onderelkaar zetten etc)*/
+
+.wrapper{
+
+width: auto;
+
+margin-top: 120px;
+
+display: flex;
+
+justify-content: center;
+
+flex-direction: row;
+
+text-align: center;
+
+flex-wrap: wrap ;
+
+}
+
+.wrapper .item{
+
+width: 220px;
+
+height: auto;
+
+margin: 10px;
+
+background: rgb(255, 255, 255);
+
+padding: 30px 20px 65px;
+
+border-radius: 5px;
+
+border: 1px solid #2600ff;
+
+position: relative;
+
+}
+
+.wrapper .item h3{
+
+letter-spacing: 2px;
+
+}
+
+.wrapper .item.item_1 h3{
+
+color: #69b0bb;
+
+}
+
+.wrapper .item.item_2 h3{
+
+color: #f4581b
+
+}
+
+.wrapper .item.item_3 h3{
+
+color: rgba(255, 0, 204, 0.733);
+
+}
+
+.wrapper .item img{
+
+display: block;
+
+width: 160px;
+
+margin: 10px auto;
+
+}
+
+.wrapper .item .info p{
+
+font-size: 10px;
+
+color: #a3a3a3;
+
+margin-bottom: 5px;
+
+}
+
+.wrapper .item .price{
+
+margin-top: 20px;
+
+}
+
+.wrapper .item .price sub,
+
+.wrapper .item .price sup{
+
+font-size: 10px;
+
+}
+
+.wrapper .item .btn{
+
+position: absolute;
+
+bottom: 0;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+width: 170px;
+
+padding: 8px;
+
+border-top-right-radius: 5px;
+
+border-bottom-left-radius: 5px;
+
+}
+
+/* einde prijzenboxen */
+
+.highway{
+
+height: 200px;
+
+width: 500%;
+
+display: block;
+
+background-image: url(img/weg.jpg);
+
+position: absolute;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+
+z-index: 1;
+
+background-repeat: repeat-x;
+
+animation: highway 1s linear infinite;
+
+}
+
+@keyframes highway{
+
+0%{
+
+transform: translateX(0px);
+
+}
+
+100%{
+
+transform: translateX(-1000px);
+
+}
+
+}
+
+.city{
+
+height: 250px;
+
+width: 500%;
+
+background-image: url(img/city.png);
+
+position: absolute;
+
+bottom: 200px;
+
+left: 0;
+
+right: 0;
+
+display: block;
+
+z-index: 1;
+
+background-repeat: repeat-x;
+
+animation: city 20s linear infinite;
+
+}
+
+@keyframes city{
+
+100%{
+
+transform: translateX(-1400px);
+
+}
+
+}
+
+.car{
+
+width: 400px;
+
+left: 50%;
+
+bottom: 100px;
+
+transform: translateX(-50%);
+
+position: absolute;
+
+z-index: 2;
+
+}
+
+.car img{
+
+width: 100%;
+
+animation: car 1s linear infinite;
+
+}
+
+@keyframes car {
+
+100%{
+
+transform:translateY(-1px)
+
+}
+
+50%{
+
+transform:translateY(-1px)
+
+}
+
+0%{
+
+transform:translateY(-1px)
+
+}
+
+}
+
+.wheel{
+
+left: 50%;
+
+bottom: 178px;
+
+transform: translateX(-50%);
+
+position: absolute;
+
+z-index: 2;
+
+}
+
+.wheel img{
+
+width: 72px;
+
+height: 72px;
+
+animation: wheel 1s linear infinite;
+
+}
+
+.back-wheel{
+
+left: -165px;
+
+position: absolute;
+
+}
+
+.front-wheel{
+
+left: 80px;
+
+position: absolute;
+
+}
+
+@keyframes wheel{
+
+100%{
+
+transform: rotate(360deg);
+
+}
+
+}
+
+@media screen and (max-width: 720px){
+    .sky{
+        display: none;
+    }
+    .city{
+        display: none;
+    }
+    .wheel{
+        display: none;
+    }
+    .car{
+        display: none;
+    }
+    .highway{
+        display: none;
+    }
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+}
+
+

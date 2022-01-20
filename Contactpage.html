@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="NAV.css">
+    <link rel="stylesheet" href="Contact.css">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+          <nav>
+            <label class="menu-icons" for="HB">
+              <i class="icon ion-md-menu"></i>
+            </label>
+            <input type="checkbox" name="HB" id="HB">
+            <a href="Homepage.html" class="logo">
+              <i class="icon ion-md-restaurant"></i>
+            </a>
+            <ul class="nav-list">
+              <li>
+                <a href="Homepage.html">Home</a>
+              </li>
+              <li>
+                <a href="#">Menu
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                 
+                  <li>
+                    <a href="Prijzenlijst.html">Prijzenlijst
+                      <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                      
+                      <li>
+                        <a href="Gallerij.html">Projecten
+                          <i class="icon ion-md-arrow-dropdown"></i>
+                        </a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="Over ons.html">Overons</a>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              <li class="move-right btn">
+                <a href="Contactpage.html">Contact</a>
+              </li>
+            </ul>
+    
+          </nav>
+    
+        </div>
+    
+    
+    
+      </header>
+    <div class="container">
+        <h2>Contact ons!</h2>
+        <form>
+            <div class="wrapper">
+                <div class="box">
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="fname">Voornaam</label>
+                </div>
+                <div class="box">
+                    <input type="text" name="lname" id="lname" required>
+                    <label for="fname">Achternaam</label>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="box">
+                    <input type="email" name="mail" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="box">
+                    <input type="text" name="tel" id="tel" required>
+                    <label for="tel">Telefoonnummer</label>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="box">
+                    <textarea id="mes" required></textarea>
+                    <label for="mes">Stel uw vraag</label>
+                </div>
+
+            </div>
+
+            ,<input type="submit" name="" value="Verzend">
+        </form>
+    </div>
+</body>
+</html>
