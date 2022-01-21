@@ -5,101 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="NAV.css">
     <link rel="stylesheet" href="Contact.css">
     <title>Contact</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-          <nav>
-            <label class="menu-icons" for="HB">
-              <i class="icon ion-md-menu"></i>
-            </label>
-            <input type="checkbox" name="HB" id="HB">
-            <a href="Homepage.html" class="logo">
-              <i class="icon ion-md-restaurant"></i>
-            </a>
-            <ul class="nav-list">
-              <li>
-                <a href="Homepage.html">Home</a>
-              </li>
-              <li>
-                <a href="#">Menu
-                  <i class="icon ion-md-arrow-dropdown"></i>
-                </a>
-                <ul class="sub-menu">
-                 
-                  <li>
-                    <a href="Prijzenlijst.html">Prijzenlijst
-                      <i class="icon ion-md-arrow-dropdown"></i>
-                    </a>
-                    <ul class="sub-menu">
-                      
-                      <li>
-                        <a href="Gallerij.html">Projecten
-                          <i class="icon ion-md-arrow-dropdown"></i>
-                        </a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="Over ons.html">Overons</a>
-                          </li>
-                          
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-              </li>
-              
-              <li class="move-right btn">
-                <a href="Contactpage.html">Contact.</a>
-              </li>
-            </ul>
-    
-          </nav>
-    
-        </div>
-    
-    
-    
-      </header>
-    <div class="container">
-        <h2>Contact ons!</h2>
-        <form>
-            <div class="wrapper">
-                <div class="box">
-                    <input type="text" name="fname" id="fname" required>
-                    <label for="fname">Voornaam</label>
-                </div>
-                <div class="box">
-                    <input type="text" name="lname" id="lname" required>
-                    <label for="fname">Achternaam</label>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="box">
-                    <input type="email" name="mail" id="email" required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="box">
-                    <input type="text" name="tel" id="tel" required>
-                    <label for="tel">Telefoonnummer</label>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="box">
-                    <textarea id="mes" required></textarea>
-                    <label for="mes">Stel uw vraag</label>
-                </div>
-
-            </div>
-
-            ,<input type="submit" name="" value="Verzend">
-        </form>
-    </div>
+  <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/test_nbalogo-removebg-preview.png"></a>
+          <div class="nav-links">
+              <i class="fa fa-times"></i>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="NBA-players.html">NBA-players</a></li>
+                  <li><a href="Current.html">Current standings</a></li>
+                  <li><a href="about_us.html">About us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars"></i>
+      </nav>
+      <div class="contact">
+          <div class="content">
+              <h2>Contact Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis diam. Morbi velit dolor, tempus in scelerisque non, volutpat vel lectus. Vestibulum id iaculis massa. Curabitur ac venenatis velit, vitae finibus nisl. Nam suscipit
+                  eget nibh ut volutpat. Vivamus nec suscipit felis.</p>
+          </div>
+          <div class="container-contact">
+              <div class="contactInfo">
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                      <div class="text">
+                          <h3>Address</h3>
+                          <p>Onderwijsboulevard 215,<br> 's-Hertogenbosch, <br>5223 DE </p>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                      <div class="text">
+                          <h3>Phone</h3>
+                          <p>Felix Marfo: 06-30576736<br> Harlod Bombala : 06-87976489</p>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                      <div class="text">
+                          <h3>E-mail</h3>
+                          <p>Felix Marfo: felix@live.nl<br> Harlod Bombala : harlod@live.nl </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="contactForm">
+                  <form action="mailto:h.bombala@student.avans.nl" method="post" enctype="text/plain">
+                      <div class="inputBox">
+                          <input type="text" name="" required="required">
+                          <span>Full Name</span>
+                      </div>
+                      <div class="inputBox">
+                          <input type="text" name="" required="required">
+                          <span> Email</span>
+                      </div>
+                      <div class="inputBox">
+                          <textarea required="required"></textarea>
+                          <span>Your Message...</span>
+                      </div>
+                      <div class="inputBox">
+                          <input type="submit" name="" value="Send">
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
 </body>
 </html>
