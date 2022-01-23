@@ -28,11 +28,11 @@
   text-transform: uppercase;
   font-weight: 300;
   animation-name: h2keyfame;
-  animation-duration: 5s;
+  animation-duration: 6s;
 }
 @keyframes h2keyfame {
-  from {background-color: black}
-  to {background-color: orange;}
+  from {color: black}
+  to {color: orange;}
 }
 .text p{
   font-size: 1.6rem;
