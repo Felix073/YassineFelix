@@ -27,8 +27,13 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 300;
+  animation-name: h2keyfame;
+  animation-duration: 5s;
 }
-
+@keyframes h2keyfame {
+  from {background-color: black}
+  to {background-color: orange;}
+}
 .text p{
   font-size: 1.6rem;
   margin-bottom: 5rem;
